@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simon Holmgaard Kamp - Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Simon Holmgaard Kamp - research in cryptography, distributed computing, consensus, and blockchains.">
+  <style>
+    :root {
+      --accent: #005f99;
+      --accent-light: #e6f3fb;
+      --text: #222;
+      --muted: #666;
+      --bg: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 24px 16px 48px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+
+    .photo {
+      flex: 0 0 140px;
+      width: 140px;
+      height: 140px;
+      aspect-ratio: 1 / 1;
+      min-width: 140px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      overflow: hidden;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .header-text {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    h1 {
+      margin: 0 0 4px;
+      font-size: 1.9rem;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .links {
+      margin-top: 8px;
+      font-size: 0.95rem;
+    }
+
+    .links span {
+      margin-right: 12px;
+    }
+
+    .icon-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 30px;
+      height: 30px;
+      padding: 4px;
+      border-radius: 6px;
+      vertical-align: middle;
+    }
+
+    .icon-link:hover {
+      background: var(--accent-light);
+      text-decoration: none;
+    }
+
+    .icon-link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .icon-link svg {
+      display: block;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    .email-logo,
+    .scholar-logo,
+    .github-logo {
+      width: 22px;
+    }
+
+    main section {
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 4px;
+    }
+
+    .news-list,
+    .pub-list,
+    .teaching-list,
+    .talks-list,
+    .service-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 8px 0 0;
+    }
+
+    .news-list li,
+    .pub-list li,
+    .teaching-list li,
+    .talks-list li,
+    .service-list li {
+      margin-bottom: 6px;
+    }
+
+    .pub-title {
+      font-weight: 600;
+    }
+
+    .pub-list strong a {
+      color: inherit;
+    }
+
+    .pub-authors {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .pub-venue {
+      font-style: italic;
+      font-size: 0.95rem;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 1px 6px;
+      border-radius: 999px;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-size: 0.75rem;
+      margin-left: 4px;
+    }
+
+    .contact {
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      border-top: 1px solid #eee;
+      padding-top: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .page {
+        padding: 16px 12px 32px;
+      }
+      header {
+        align-items: flex-start;
+      }
+      .photo {
+        flex-basis: 110px;
+        width: 110px;
+        height: 110px;
+        min-width: 110px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="photo">
+        <img src="simon.jpg" alt="Simon Holmgaard Kamp">
+      </div>
+      <div class="header-text">
+        <h1>Simon Holmgaard Kamp</h1>
+        <p class="subtitle">
+          Researcher in Cryptography and Distributed Computing<br>
+          Ruhr University Bochum
+        </p>
+        <div class="links">
+          <span>
+            <a class="icon-link" href="mailto:simon.kamp@rub.de" aria-label="Email Simon Holmgaard Kamp" title="Email">
+              <svg class="email-logo" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"/>
+              </svg>
+            </a>
+          </span>
+          <span>
+            <a class="icon-link" href="https://scholar.google.com/citations?user=JYP_oXEAAAAJ" aria-label="Google Scholar" title="Google Scholar">
+              <svg class="scholar-logo" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2 1 8l4 2.18V16l7 4 7-4v-5.82L21 9.09V16h2V8L12 2Zm0 2.28L18.82 8 12 11.72 5.18 8 12 4.28ZM7 11.27l5 2.73 5-2.73v3.57l-5 2.86-5-2.86v-3.57Z"/>
+              </svg>
+            </a>
+          </span>
+          <span>
+            <a class="icon-link" href="https://github.com/simonkamp" aria-label="GitHub" title="GitHub">
+              <svg class="github-logo" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 .7a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2.23c-3.22.7-3.9-1.37-3.9-1.37-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.29-5.27-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.47.11-3.05 0 0 .97-.31 3.16 1.18a10.96 10.96 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.58.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.4-2.71 5.38-5.29 5.67.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .7Z"/>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p>
+        I am a postdoctoral researcher working on problems in cryptography and distributed computing.
+        I completed my PhD in computer science at Aarhus University, supervised by Jesper Buus Nielsen.
+        During my PhD, I visited Christian Cachin at the University of Bern, interned at Galois Inc., and worked at Concordium Research on consensus and cryptographic protocols.
+        Since then I have been hosted by Julian Loss at the CISPA Helmholtz Center for Information Security and Ruhr University Bochum.
+        </p>
+      </section>
+
+    <section id="publications">
+    <h2>Publications</h2>
+
+
+
+    <h3>2026</h3>
+    <ul class="pub-list">
+      <li>
+        <strong><a href="https://eprint.iacr.org/2025/128">Asynchronous YOSO a la Paillier</a></strong><br>
+        <span class="authors">Ivan Bjerre Damgård, Simon Holmgaard Kamp, Julian Loss, Jesper Buus Nielsen</span><br>
+        <span class="venue">TCC&nbsp;2026</span>
+      </li>
+
+      <li>
+        <strong><a href="https://eprint.iacr.org/2026/1183">Validity in Responsive Byzantine Agreement</a></strong><br>
+        <span class="authors">Diana Ghinea, Simon Holmgaard Kamp, Chen-Da Liu-Zhang</span><br>
+        <span class="venue">DISC&nbsp;2026</span>
+      </li>
+
+      <li>
+        <strong><a href="https://arxiv.org/abs/2607.04887">Symmetry all the way down</a></strong><br>
+        <span class="authors">Ignacio Amores-Sesar, Christian Cachin, Simon Holmgaard Kamp, Juan Villacis</span><br>
+        <span class="venue">DISC&nbsp;2026</span>
+      </li>
+
+      <li>
+        <strong><a href="https://eprint.iacr.org/2026/239">Optimal Best-of-Both-Worlds Consensus</a></strong><br>
+        <span class="authors">Fatima Elsheimy, Simon Holmgaard Kamp, Julian Loss, Jesper Buus Nielsen</span><br>
+        <span class="venue">CRYPTO&nbsp;2026</span>
+      </li>
+
+      <li>
+        <strong><a href="https://eprint.iacr.org/2026/989">Brief announcement: BumbleBee: Best-of-Both-Worlds MVBA with Optimal Communication, Latency and Resilience Tradeoffs</a></strong><br>
+        <span class="authors">Fatima Elsheimy, Simon Holmgaard Kamp</span><br>
+        <span class="venue">PODC&nbsp;2026</span>
+      </li>
+
+      <li>
+        <strong><a href="https://eprint.iacr.org/2025/2006">OmniBA: Round-Efficient BA with Quadratic Communication under Mixed Faults</a></strong><br>
+        <span class="authors">Simon Holmgaard Kamp, Julian Loss, Kartik Nayak, Kecheng Shi</span><br>
+        <span class="venue">FC&nbsp;2026</span>
+      </li>
+    </ul>
+
+    <h3>2025</h3>
+    <ul class="pub-list">
+        <li>
+        <strong><a href="https://eprint.iacr.org/2025/143">Short paper: A New Way to Achieve Round-Efficient Asynchronous Byzantine Agreement</a></strong><br>
+        <span class="authors">Simon Holmgaard Kamp</span><br>
+        <span class="venue">FC&nbsp;2025</span>
+        </li>
+
+        <li>
+        <strong><a href="https://eprint.iacr.org/2024/1647">Short paper: Curve Forests: Transparent Zero-Knowledge Set Membership with Batching and Strong Security</a></strong><br>
+        <span class="authors">Matteo Campanelli, Mathias Hall-Andersen, Simon Holmgaard Kamp</span><br>
+        <span class="venue">FC&nbsp;2025</span>
+        </li>
+        
+        <li>
+        <strong><a href="https://arxiv.org/abs/2509.09493">Weaker Assumptions for Asymmetric Trust</a></strong><br>
+        <span class="authors">Ignacio Amores-Sesar, Christian Cachin, Simon Holmgaard Kamp, Juan Villacis</span><br>
+        <span class="venue">OPODIS&nbsp;2025</span>
+        </li>
+    </ul>
+
+    <h3>2023</h3>
+    <ul class="pub-list">
+        <li>
+        <strong><a href="https://eprint.iacr.org/2022/756">Curve Trees: Practical and Transparent Zero-Knowledge Accumulators</a></strong><br>
+        <span class="authors">Matteo Campanelli, Mathias Hall-Andersen, Simon Holmgaard Kamp</span><br>
+        <span class="venue">USENIX Security&nbsp;2023</span>
+        </li>
+
+        <li>
+        <strong><a href="https://eprint.iacr.org/2023/1103">Practical Large-Scale Proof-Of-Stake Asynchronous Total-Order Broadcast</a></strong><br>
+        <span class="authors">Orestis Alpos, Christian Cachin, Simon Holmgaard Kamp, Jesper Buus Nielsen</span><br>
+        <span class="venue">AFT&nbsp;2023</span>
+        </li>
+    </ul>
+
+    <h3>2021</h3>
+    <ul class="pub-list">
+        <li>
+        <strong><a href="https://eprint.iacr.org/2020/328">Weight-Based Nakamoto-Style Blockchains</a></strong><br>
+        <span class="authors">Simon Holmgaard Kamp, Bernardo Magri, Christian Matt, Jesper Buus Nielsen, Søren Eller Thomsen, Daniel Tschudi</span><br>
+        <span class="venue">LATINCRYPT&nbsp;2021</span>
+        </li>
+    </ul>
+
+    </section>
+
+      <section id="teaching">
+        <h2>Teaching</h2>
+        <ul class="teaching-list">
+          <li>Guest lecture in undergraduate Distributed Computing at Ruhr University Bochum.</li>
+          <li>Teaching assistant for Distributed Systems and Security, Computability and Logic, Foundations of Algorithms and Data Structures, and Programming Languages at Aarhus University.</li>
+        </ul>
+      </section>
+
+      <section id="service">
+        <h2>Service</h2>
+        <ul class="service-list">
+          <li>Program committees: EUROCRYPT 2026, ACM CCS 2026, Financial Cryptography 2027, and CT-RSAC 2027.</li>
+        </ul>
+      </section>
+
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p class="contact">
+          The best way to reach me is by email:<br>
+          <a href="mailto:simon.kamp@rub.de">simon.kamp@rub.de</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      Last updated: August 2026.
+    </footer>
+  </div>
+</body>
+</html>
